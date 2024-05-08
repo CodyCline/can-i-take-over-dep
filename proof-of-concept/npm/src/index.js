@@ -1,0 +1,1 @@
+console.log("I am an example malicious package!")
