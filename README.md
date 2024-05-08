@@ -1,4 +1,4 @@
-<h1 align="center">Can I Take Over Dependency?<br><sup><sub>A list of package managers and whether they are vulnerable to dependency takeovers!<br><sup> Maintained by</sup>
+<h1 align="center">Can I Take Over Dependency?<br><sup><sub>A list of package managers and whether they are vulnerable to dependency takeovers!<br><sup> Maintained by</sup></h1>
 
 
 ## Disclaimer :warning:
