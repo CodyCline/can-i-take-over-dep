@@ -7,7 +7,14 @@
 
 
 ### Some fantastic resources about dependency takeovers you can read about:
-https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610
+https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610v
+
+
+### Quality Writeups 
+https://hackerone.com/reports/946409
+https://hackerone.com/reports/1043385
+https://hackerone.com/reports/1007014
+https://hackerone.com/reports/925585
 
 ### What is a dependency confusion or takeover?
 
@@ -28,5 +35,5 @@ Almost all programming language runtimes, such as JavaScript, C#, Ruby are equip
 
 | 📦 Package Manager | 🪲 Is Vulnerable ? | 📓 Language or Platform | 🚪 Entry Point | 🪝 Execution Vector | 💾 PoC Code | 🏪 Registry  URLs  | 🛡️ Mitigation(s)
 | - | - | -  | - | - | - | - | - |
-| npm | yes | `javascript` or `typescript` | package.json | `preinstall` and `postinstall` | [npm example](./proof-of-concept/npm/) | https://www.npmjs.com/ | use a scoped namespace such as `@company/package` |
-
+| npm | yes | `javascript` or `typescript` | package.json | `preinstall` and `postinstall` | [npm example](./proof-of-concept/npm/) | https://www.npmjs.com/ | use a scoped namespace such as `@company/package` 
+| nuget | yes | `c#` or `f#` or `vb` | `.csproj` |  .targets file(s) referenced by .csproj | [dotnet examples](./proof-of-concept/nuget/) | https://nuget.org | use a packageSourceMapping declaration in `nuget.config` and reserve a name prefix such as `Company.Namespace.Package`

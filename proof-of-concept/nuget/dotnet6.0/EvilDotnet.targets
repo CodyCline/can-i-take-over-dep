@@ -1,0 +1,24 @@
+<Project ToolsVersion="15.0" InitialTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<UsingTask
+		TaskName="BuildForArch"
+		TaskFactory="RoslynCodeTaskFactory"
+		AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >
+		<ParameterGroup />
+		<Task>
+			<Using Namespace="System" />
+
+			<Code Type="Fragment" Language="cs">
+				<![CDATA[
+		string home = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+		Console.WriteLine(home);
+]]>
+			</Code>
+		</Task>
+	</UsingTask>
+
+	<Target Name="RsgBuild"
+	        BeforeTargets="BeforeBuild"
+	        Condition=" '$(BuildingByReSharper)' != 'true' ">
+		<BuildForArch />
+	</Target>
+</Project>
