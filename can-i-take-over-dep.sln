@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "proof-of-concept", "proof-of-concept", "{FB71713E-2725-4556-B4D1-5DCB0DA703BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{98E56219-5F52-4923-98F6-5E0BF5C1CC94}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet6.0", "proof-of-concept\nuget\dotnet6.0\dotnet6.0.csproj", "{24AA7FAE-1EE2-4C1A-ACD7-3844E5D9A5D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24AA7FAE-1EE2-4C1A-ACD7-3844E5D9A5D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24AA7FAE-1EE2-4C1A-ACD7-3844E5D9A5D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24AA7FAE-1EE2-4C1A-ACD7-3844E5D9A5D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24AA7FAE-1EE2-4C1A-ACD7-3844E5D9A5D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{98E56219-5F52-4923-98F6-5E0BF5C1CC94} = {FB71713E-2725-4556-B4D1-5DCB0DA703BE}
+		{24AA7FAE-1EE2-4C1A-ACD7-3844E5D9A5D6} = {98E56219-5F52-4923-98F6-5E0BF5C1CC94}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A6559A6-FD6E-48DA-B70E-04DD4F7FF2D7}
+	EndGlobalSection
+EndGlobal
